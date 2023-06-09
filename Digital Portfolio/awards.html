@@ -9,9 +9,10 @@
   </head>
   <body>
     <header>
-      <span class="menu-icon">☰</span>
+      <span class="menu-icon" onclick="openNav()">☰</span>
       <h1 class="name">Roderick Azevedo</h1>
       <ul id="nav" class="navigation">
+        <button class="closeBtn" onclick="closeNav()">&times;</button>
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li class="navigation_active"><a href="awards.html">Awards</a></li>
@@ -19,9 +20,10 @@
       </ul>
     </header>
     <main>
-      <section class="badge-certification">
+      <section class="badge-certifications">
+        <h1 class="heading">Certifications</h1>
         <div class="badge-grid_container">
-          <div class="badge-certification_container">
+          <div class="badge-certifications_container">
             <h2 class="subheading">IT Specialist - HTML and CSS</h2>
             <img
               src="images/IT Specialist HTML and CSS.png"
@@ -29,7 +31,7 @@
               class="badge-certification_image"
             />
           </div>
-          <div class="badge-certification_container">
+          <div class="badge-certifications_container">
             <h2 class="subheading">IT Specialist - Databases</h2>
             <img
               src="images/IT Specialist Databases.png"
@@ -37,7 +39,7 @@
               class="badge-certification_image"
             />
           </div>
-          <div class="badge-certification_container">
+          <div class="badge-certifications_container">
             <h2 class="subheading">CompTIA IT Fundamentals</h2>
             <img
               src="images/CompTIA IT Fundamentals.png"
@@ -45,7 +47,7 @@
               class="badge-certification_image"
             />
           </div>
-          <div class="badge-certification_container">
+          <div class="badge-certifications_container">
             <h2 class="subheading">
               MTA: Introduction to Programming Using HTML and CSS
             </h2>
@@ -55,7 +57,7 @@
               class="badge-certification_image"
             />
           </div>
-          <div class="badge-certification_container">
+          <div class="badge-certifications_container">
             <h2 class="subheading">
               MTA: Introduction to Programming Using Python
             </h2>
@@ -65,7 +67,7 @@
               class="badge-certification_image"
             />
           </div>
-          <div class="badge-certification_container">
+          <div class="badge-certifications_container">
             <h2 class="subheading">
               MTA: Introduction to Programming Using JavaScript
             </h2>
@@ -77,9 +79,9 @@
           </div>
         </div>
       </section>
-      <section class="pc-certification">
+      <section class="pc-certifications">
         <div class="pc-grid_container">
-          <div class="pc_certification_container">
+          <div class="pc-certifications_container">
             <h2 class="subheading">Testout PC Pro</h2>
             <img
               src="images/Testout PC PRO.png"
@@ -87,32 +89,40 @@
               class="pc-certification_image"
             />
           </div>
-          <div class="pc-certification_container">
-            <h2 class="subheading">
-              Testout IT Fundamentals Pro
-            </h2>
+          <div class="pc-certifications_container">
+            <h2 class="subheading">Testout IT Fundamentals Pro</h2>
             <img
               src="images/TestOut IT Fundamentals Pro.png"
               alt=""
               class="pc-certification_image"
             />
           </div>
-          <div class="pc_certification_cainer">
+          <div class="pc-certifications_container">
             <h2 class="subheading">CIW Site Development Associate</h2>
-            <img src="images/site_dev_assoc.jpg" alt="" class="pc-certification_image">
+            <img
+              src="images/site_dev_assoc.jpg"
+              alt=""
+              class="pc-certification_image"
+            />
           </div>
         </div>
       </section>
       <section class="awards">
         <h1 class="heading">Awards</h1>
-        <p>
-          <ul>
-            <li>2022 - SkillsUSA District and States silver medals (Web Design)</li> <br>
-            <li>2023 - SkillsUSA District and States silver medals (Web Design)</li> <br>
-            <li>2021 - 2022 High Honors terms 2-4</li> <br>
-            <li>2021 - 2022 Perfect attendance</li> <br>
-          </ul>
-        </p>
+        <ul>
+          <li>
+            2022 - SkillsUSA District and States silver medals (Web Design)
+          </li>
+          <br />
+          <li>
+            2023 - SkillsUSA District and States silver medals (Web Design)
+          </li>
+          <br />
+          <li>2021 - 2022 High Honors terms 2-4</li>
+          <br />
+          <li>2021 - 2022 Perfect attendance</li>
+          <br />
+        </ul>
       </section>
       <footer>
         <div class="email_container">

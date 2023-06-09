@@ -43,8 +43,22 @@ header {
   display: none;
 }
 
-.menu-icon:hover{
-  color:rgba(255, 255, 255, 0.7);
+.menu-icon:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.closeBtn {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  margin: 5px;
+  display: none;
+}
+
+.closeBtn:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .name {
@@ -68,7 +82,7 @@ li a {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 21px;
   padding: 36px 16px;
 }
 
@@ -129,9 +143,22 @@ footer a {
 }
 
 /* Awards */
-.badge-certification {
+.badge-certifications {
   padding: 50px;
   background-color: #192428;
+}
+
+.badge-certifications h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.badge-certifications h2{
+  max-width: 400px;
+}
+
+.badge-certifications h2, .pc-certifications h2 {
+  font-size: 20px;
 }
 
 .badge-grid_container {
@@ -147,8 +174,12 @@ footer a {
   margin: 10px auto;
 }
 
-.pc-certification {
+.pc-certifications {
   padding: 50px;
+}
+
+.pc-certifications h2{
+  min-width: 320px;
 }
 
 .pc-grid_container {
@@ -162,11 +193,12 @@ footer a {
   max-width: 200px;
 }
 
-.awards{
+
+
+.awards {
   background-color: #056d96;
   padding: 50px;
 }
-
 
 /* Resume */
 
@@ -190,13 +222,14 @@ ul {
   display: flex;
 }
 
-.work-experience_container, .activities_container {
+.work-experience_container,
+.activities_container {
   max-width: 600px;
 }
 
 /* mobile optimization */
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1330px) {
   .badge-grid_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -216,11 +249,43 @@ ul {
     display: flex;
     flex-direction: column;
   }
-  .navigation{
-    display: none;
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #0784b5;
+    margin: 0;
+    padding: 0;
+    transition: 0.25s;
+    width: 200px;
   }
-  .menu-icon{
+
+  li {
+    float: none;
+  }
+
+  .navigation li:hover {
+    background-color: #0a94ca;
+    transition: 0.5s;
+  }
+
+  .navigation li.navigation_active {
+    background-color: #39ace7;
+    transition: 0.5s;
+  }
+  
+  .menu-icon {
     display: inline;
     cursor: pointer;
+  }
+
+  .closeBtn{
+    display: block;
+  }
+
+  .pc-certifications_container {
+    margin: 30px;
   }
 }
