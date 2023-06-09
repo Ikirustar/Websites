@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <script>
+        function first_dot(){
+            document.getElementById('slide_image').src="Images/Roderick.jpg";
+            document.getElementById('first_dot').style.color="white"
+            document.getElementById('second_dot').style.color="black"
+            document.getElementById('third_dot').style.color="black"
+        }
+        function second_dot(){
+            document.getElementById('slide_image').src="Images/Roderick.jpg";
+            document.getElementById('first_dot').style.color="black"
+            document.getElementById('second_dot').style.color="white"
+            document.getElementById('third_dot').style.color="black"
+        }
+        function third_dot(){
+            document.getElementById('slide_image').src="Images/Roderick.jpg"
+            document.getElementById('first_dot').style.color="black"
+            document.getElementById('second_dot').style.color="black"
+            document.getElementById('third_dot').style.color="white"
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Gameplay.html">Gameplay/Help</a>
+            <a href="Download.html">Download</a>
+        </nav>
+    </header>
+    <main class="main--home">
+        <div class="title--home" onclick="document.getElementById('g').innerHTML='l'">
+            <h1>
+                Journey To Help
+            </h1>
+        </div>
+        <div class="slideshow-container">
+            <img id="slide_image" src="Images/Journey to Help title screen.png" alt="">
+            <div class="slideshow_dot--container">
+                <div id="first_dot" onclick="first_dot()">
+                    .
+                </div>
+                <div id="second_dot" onclick="second_dot()">
+                    .
+                </div>
+                <div id="third_dot" onclick="third_dot()">
+                    .
+                </div>
+            </div>
+        </div>
+        <div class="p--game_description">
+            <p>
+                A young girl named Task Manager is on her Journey to therapy. However, it is gonna be a challenge for her to get 
+                there. Task must go through her house, the forest, and a building. Sometimes it is not easy to get help 
+                and she is no exception to that. Join Task on her journey to help and complete three stages to make it 
+                to the end! 
+            </p>
+        </div>
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(0, 94, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 156, 0);
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(231, 216, 0);
+  display: block;
+  padding: 8px 8px 8px 16px;
+  font-size: 20px;
+  min-width: 200px;
+}
+
+li a:hover {
+  transition: 0.5s;
+  background-color: rgb(231, 216, 0);
+  color: black;
+}
+
+.closebtn {
+  background: transparent;
+  border: none;
+  color: rgb(231, 216, 0);
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: yellow;
+}
+
+.closebtn + li {
+  margin-top: 40px;
+}
+
+.nav-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(231, 216, 0);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.nav-icon:hover {
+  color: yellow;
+  transition: 0.5s;
+}
+
+/* grid */
+
+.main_container {
+  padding: 50px;
+  background-color: aquamarine;
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  grid-template-areas: "myArea ." "myArea ." "myArea ." "myArea ." "myArea .";
+}
+
+.main_container div {
+  background-color: aqua;
+}
+
+.grid1 {
+  grid-area: "myArea";
+}

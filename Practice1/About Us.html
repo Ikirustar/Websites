@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice1</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <span class="openbtn" onclick="openNav()">&#9776;</span>
+      <h1>Webpage name</h1>
+    </header>
+    <main>
+      <h2>Slideshow title</h2>
+
+      <ul id="mySidenav" class="nav">
+        <!-- Its better to have this button as list, so it is easier to manipulate.
+        However, I have my links background get highlighted when I hover over it.
+        W3schools only changes color of text. I don't want x button background to be highlighted. -->
+        <span class="btnclose" onclick="closeNav()">&times;</span>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="slideshow">
+        <div class="slideshow-container">
+          <div class="slideshow-slide">
+            <img
+              src="Images/desktop-wallpaper-techno-techno-blue.jpg"
+              alt="Test image"
+            />
+            <div class="caption">Caption one</div>
+            <div class="slideNumber">1/3</div>
+          </div>
+          <div class="slideshow-slide">
+            <img
+              src="Images/synthwave-sun-mountains-4k-op-2560x1440.jpg"
+              alt="Test image"
+            />
+            <div class="caption">Caption two</div>
+            <div class="slideNumber">2/3</div>
+          </div>
+          <div class="slideshow-slide">
+            <img src="Images/ThinkPad background.jpg" alt="Test image" />
+            <div class="caption">Caption three</div>
+            <div class="slideNumber">3/3</div>
+          </div>
+          <button class="slideshow-next" onclick="showSlides();">&gt;</button>
+          <button class="slideshow-prev">&lt;</button>
+        </div>
+      </div>
+    </main>
+    <script src="Slideshow.js"></script>
+  </body>
+</html>

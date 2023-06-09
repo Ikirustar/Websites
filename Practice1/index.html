@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice1</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <span class="openbtn" onclick="openNav()">&#9776;</span>
+      <h1>Webpage name</h1>
+    </header>
+    <main>
+      <h2>Welcome to web page</h2>
+      
+      <ul id="mySidenav" class="nav">
+        <!-- Its better to have this button as list, so it is easier to manipulate.
+        However, I have my links background get highlighted when I hover over it.
+        W3schools only changes color of text. I don't want x button background to be highlighted. -->
+        <span class="btnclose" onclick="closeNav()">&times;</span>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+        exercitationem eos illum sed, eveniet dignissimos necessitatibus earum
+        ipsum voluptatibus enim cupiditate porro dolorem aut maxime eaque
+        laudantium voluptate sit. Provident? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Reiciendis sed ab iste blanditiis totam
+        laboriosam perspiciatis optio nostrum similique nihil, exercitationem ad
+        quos vitae, cum illum fugiat voluptatibus ratione velit.
+      </p>
+    </main>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

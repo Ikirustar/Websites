@@ -1,0 +1,113 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: darkgray;
+}
+
+/* Header styling */
+
+header{
+    background-color:rgb(56, 56, 56);
+    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    text-align: center;
+    font-size: 30px;
+    height: 250px;
+}
+
+main{
+    margin-top: 300px;
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    margin:10px;
+    color: white;
+}
+
+.navigation a:hover{
+    color:gainsboro;
+}
+
+.navigation a:active{
+    color:darkgray;
+}
+
+/* footer styling */
+footer{
+    background-color: dimgrey;
+    color: white;
+    bottom:0;
+    left: 0;
+    padding: 25px;
+}
+
+footer h2{
+    color: white;
+    font-size: 30px;
+}
+
+/* Home page */
+
+.biography {
+    display: flex;
+    justify-content: center;
+}
+
+.biography p{
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.sub-heading{
+    font-size: 30px;
+    color:rgb(56, 56, 56);
+}
+
+.bio-container{
+    margin: 50px;
+}
+
+.img--picture{
+    max-width: 500px;
+}
+
+/* Resume */
+.resume{
+    display: flex;
+    justify-content: center;
+}
+
+.resume p{
+    max-width: 400px;
+}
+
+.resume h2{
+    text-align: center;
+}
+.resume-container{
+    margin:30px;
+}
+
+.resume-name{
+    color:darkcyan;
+}
+
+/* color:rgb(16, 112, 207); */
+
+
+
+
+
+
