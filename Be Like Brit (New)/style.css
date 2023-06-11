@@ -110,8 +110,7 @@ main {
 
 .banner_title {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-390%);
   width: 100%;
   text-align: center;
   font-size: 60px;
@@ -119,14 +118,17 @@ main {
   font-weight: bold;
 }
 
-.banner_div {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("Images/brit.png");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.banner {
+  background-color: black;
+  height: 400px;
+}
+
+.banner_image {
+  object-fit: cover;
+  display: relative;
+  width: 100%;
+  height: 400px;
+  opacity: 0.7;
 }
 
 .brit {

@@ -71,6 +71,7 @@ header {
   margin: 0 0 0 50px;
   padding: 0;
   overflow: hidden;
+  width: 500px;
 }
 
 li {
@@ -227,6 +228,33 @@ ul {
   max-width: 600px;
 }
 
+/* Work samples */
+
+.websites{
+  padding: 50px;
+  background-color: #056d96;
+}
+
+.websites_container{
+  background-color:#0784b5;
+  border-radius: 50px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
+.websites_container .heading{
+  text-align: center;
+}
+
+.image_container{
+  display: flex;
+  justify-content: center;
+}
+
+.websites_image {
+  height: 400px;
+  margin:0 50px;
+}
+
 /* mobile optimization */
 
 @media screen and (max-width: 1330px) {
@@ -259,7 +287,7 @@ ul {
     margin: 0;
     padding: 0;
     transition: 0.25s;
-    width: 200px;
+    width: 0;
   }
 
   li {
