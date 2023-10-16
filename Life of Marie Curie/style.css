@@ -8,13 +8,15 @@ body {
 }
 
 p {
-  font-size: 20px;
+  font-size: 24px;
   color: #bbbbbb;
 }
 
 .heading {
   color: #c5b9ab;
-  font-size: 40px;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .subheading {
@@ -71,28 +73,6 @@ li a {
 .navigation li.navigation_active {
   background-color: #39ace7;
   transition: 0.5s;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Times New Roman", Times, serif;
-  background-color: #212121;
-}
-
-p {
-  font-size: 20px;
-  color: #bbbbbb;
-}
-
-.heading {
-  color: #c5b9ab;
-  font-size: 40px;
-}
-
-.subheading {
-  color: bbbbbb;
-  font-size: 25px;
 }
 
 /* header/navigation */
@@ -226,4 +206,44 @@ main {
   font-size: 40px;
   color: #cecece;
   font-weight: bold;
+}
+
+/** Early life */
+
+/*! paris-life */
+.paris-life {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #232323;
+}
+
+.paris-life_image {
+  max-width: 500px;
+  margin: 0 50px;
+  border-radius: 10px;
+}
+
+.paris-life_text {
+  max-width: 600px;
+}
+
+/*! school life */
+.school-life {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #2e2e2e;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.school-life_text {
+  max-width: 600px;
+  margin: 50px;
 }
