@@ -247,3 +247,66 @@ main {
   max-width: 600px;
   margin: 50px;
 }
+
+/** discovery */
+
+/*! inspiration */
+.inspiration {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.inspiration_text {
+  max-width: 600px;
+  margin: 50px;
+}
+
+.inspiration_image {
+  max-width: 500px;
+  margin: 0 50px;
+  border-radius: 10px;
+}
+
+/*! hard-work */
+.hard-work {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #2e2e2e;
+}
+
+.hard-work_image {
+  max-width: 500px;
+  margin: 0 50px;
+  border-radius: 10px;
+}
+
+.hard-work_text {
+  max-width: 600px;
+  margin: 50px;
+}
+
+/*! discovery */
+.discovery {
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.discovery_image {
+  max-width: 500px;
+  margin: 0 50px;
+  border-radius: 10px;
+}
+
+.discovery_text {
+  max-width: 600px;
+  margin: 50px;
+}
