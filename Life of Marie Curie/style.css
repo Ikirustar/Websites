@@ -272,7 +272,7 @@ main {
 
 /*! hard-work */
 .hard-work {
-  padding: 100px;
+  padding:50px 100px;
   display: flex;
   align-items: center;
   margin-top: 50px;
@@ -293,7 +293,7 @@ main {
 
 /*! discovery */
 .discovery {
-  padding: 100px;
+  padding: 50px 100px;
   display: flex;
   align-items: center;
   margin-top: 50px;
