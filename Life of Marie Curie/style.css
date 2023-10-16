@@ -310,3 +310,49 @@ main {
   max-width: 600px;
   margin: 50px;
 }
+
+/** Relationship */
+
+/*! Relationship */
+.relationship {
+  padding: 0px 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.relationship_image {
+  margin: 0 50px;
+  border-radius: 200px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+.relationship_text {
+  max-width: 600px;
+}
+
+/*! difficulties */
+.difficulties {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e2e2e;
+  border-radius: 50px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  width: 600px;
+  margin: 50px auto;
+}
+
+.difficulties_text {
+  max-width: 650px;
+  text-align: center;
+}
+
+.difficulties_image {
+  max-width: 1200px;
+  border-radius: 20px;
+}
