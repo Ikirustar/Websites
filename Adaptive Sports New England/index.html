@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span onclick="openNav()" class="menu-icon">&#9776;</span>
+      <h1 class="header-text">Adaptive Sports New England</h1>
+      <ul id="nav" class="navigation">
+        <button onclick="closeNav()" class="closeBtn">x</button>
+        <img src="Images/logo.jpg" alt="" class="logo" />
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="play.html">Play With Us</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="welcome">
+        <h1 class="heading">Welcome to Adaptive Sports New England</h1>
+        <p>For youth and adults with visual or mobility impairments</p>
+      </section>
+      <section class="sports">
+        <div class="sports_container">
+          <p>
+            Adaptive Sports New England is a Massachusetts non-profit
+            organization dedicated to increasing participation in sports among
+            New England youth and adults who have visual or mobility
+            impairments. Adaptive Sports New England collaborates with
+            adaptive-specific and typical sports programs, adding value through
+            our focus on raising awareness, increasing participation, and
+            building capacity so that more youth and adults with visual or
+            mobility disabilities can access sports closer to home.
+          </p>
+          <!-- This video was shortened for github -->
+          <video
+            src="Video/asne_logo_montage_final-720p-1-shortened.mp4"
+            controls
+            type="video/mp4"
+            class="sports_video"
+          ></video>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
