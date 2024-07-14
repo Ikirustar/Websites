@@ -57,7 +57,8 @@ header {
 .navigation {
   z-index: 2;
   list-style: none;
-  /* overflow: hidden; */
+  overflow: hidden;
+  
 }
 
 .navigation li {
@@ -146,8 +147,7 @@ main {
   transform: translateY(-180%);
   color: white;
   max-width: 800px;
-  padding-left: 16.25rem;
-  padding-right: 16.25rem;
+  margin: auto 50px;
 }
 
 .sweet-innovations_section {
@@ -201,6 +201,10 @@ main {
   text-align: center;
 }
 
+.dot-container > .active {
+  background-color: #686868;
+}
+
 .dot {
   width: 20px;
   height: 20px;
@@ -220,7 +224,7 @@ main {
   background-color: #f9daf9;
 }
 
-.chocolates_container{
+.chocolates_container {
   max-width: 500px;
 }
 
@@ -248,7 +252,8 @@ main {
   background-color: #fff;
   border-radius: 50px;
   text-align: center;
-  padding: 50px; }
+  padding: 50px;
+}
 
 .question_container {
   cursor: pointer;
@@ -260,7 +265,6 @@ main {
 }
 
 .question_label {
-  
 }
 .response {
   display: none;
@@ -275,7 +279,7 @@ main {
   animation-duration: 2.5s;
 }
 
-@keyframes fade{
+@keyframes fade {
   from {
     opacity: 0.4;
   }
@@ -305,37 +309,26 @@ main {
 }
 
 @media screen and (max-width: 1030px) {
-  .menu-icon {
+  /* .menu-icon {
     display: inline;
-  }
+  } */
 
   .logo {
     margin-left: 50px;
   }
 
+  .banner_text-container {
+    text-align: center;
+  }
 
-.banner_text-container {
-  text-align: center;
-}
-  
   /* Mobile navigation */
   .navigation li:hover {
     background-color: #f601f6;
     transition: 0.5s;
   }
-  .navigation a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-  }
 
-  .close-btn {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    visibility: visible;
+  .navigation li {
+    float: left;
   }
 }
 
@@ -348,7 +341,7 @@ main {
 
 @media screen and (max-width: 1300px) {
   .explore_section {
-    gap:20px;
+    gap: 20px;
     grid-template-columns: 1fr;
   }
 }

@@ -1,0 +1,491 @@
+/* General Styles */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f4275;
+}
+
+@keyframes scrollEffect {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+p {
+  font-size: 1.25em;
+}
+/* Header Styles */
+header {
+  background-color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.header__navigation {
+  list-style: none;
+  overflow: hidden;
+}
+
+.navigation__item {
+  float: left;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  color: #0f4275;
+  font-size: 20px;
+  margin-left: 30px;
+  transition: 0.2s;
+}
+
+.navigation__item a.item--active {
+  color: #930000;
+  cursor: pointer;
+}
+
+.navigation__item a:hover {
+  color: #d20000;
+}
+
+/* Main Styles */
+main {
+  margin-top: 100px;
+}
+
+.header__logo {
+  max-width: 130px;
+}
+
+.header__menu-toggle {
+  display: none;
+}
+
+.header__menu-close {
+  display: none;
+}
+
+/* Banner Styles*/
+.banner {
+  height: 600px;
+}
+
+.banner__image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background: rgb(2, 0, 36);
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(15, 61, 110, 0.783333401720063) 44%
+    ),
+    url("Images/skills-banner.jpg");
+
+  /* Set a specific height */
+  height: 600px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__text-container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.banner__text-container h1 {
+  font-size: 60px;
+}
+
+.banner__button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.5em;
+  background-color: #b80202;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.25s;
+}
+
+.banner__button:hover {
+  background-color: #eb0303;
+}
+
+/* Overview Styles */
+.overview {
+  padding: 50px;
+  color: #001d3b;
+  background-color: rgba(255, 255, 255, 0.842);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.overview__container {
+  max-width: 700px;
+}
+
+.overview__image {
+  max-width: 600px;
+  margin: 50px;
+  border-radius: 30px;
+}
+
+.overview__container > p:nth-child(2) {
+  line-height: 2;
+}
+
+.overview__title {
+  font-size: 46px;
+  color: #034893;
+}
+
+/* Layout Test Styles*/
+.layout-test {
+  padding: 50px;
+  background-color: #ffffffc6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  color: #001d3b;
+}
+
+.layout-test__container {
+  background-color: #ffffffa0;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.layout-test__image {
+  max-width: 300px;
+  border-radius: 30px;
+}
+
+.layout-test__title {
+  font-size: 35px;
+  color: #03468e;
+}
+
+.layout-test p {
+  max-width: 300px;
+  margin: 0 auto;
+}
+/* Skills Grid Styles */
+
+.skills-grid {
+  padding: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.skills-grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills-grid__title {
+  font-size: 35px;
+}
+
+.skills-grid__item {
+  padding: 30px;
+}
+
+/* Slide Show Styles */
+.slide-show__title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.slide-show {
+  background-color: #01356b;
+  color: white;
+  padding: 50px;
+}
+
+.slide-show__container {
+  max-width: 800px;
+  position: relative;
+  height: 405px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.slide-show__slide {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  width: 100%;
+}
+
+.slide-show__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.slide-show__dot-container {
+  text-align: center;
+}
+
+.slide-show__dot-container > .item--active {
+  background-color: #6c6c6c;
+}
+
+.dot-container__item {
+  width: 20px;
+  height: 20px;
+  background-color: #bbb9b9;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 25px 5px;
+}
+/* Content Slider */
+
+.content-slider {
+  padding: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.content-slider__widget {
+  max-width: 500px;
+  background-color: #054d99;
+  padding: 70px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  transform: translateX(200px);
+  width: 400px;
+  margin: 0 20px;
+  height: 500px;
+  white-space: normal;
+  transition: 0.25s;
+  color: white;
+}
+
+.content-slider__image {
+  max-width: 300px;
+  border-radius: 30px;
+}
+
+.button__item-right,
+.button__item-left {
+  font-size: 70px;
+  color: rgb(228, 226, 226);
+  background-color: rgba(0, 0, 0, 0.267);
+  border-radius: 50%;
+  padding: 0 20px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.25s;
+  user-select: none;
+}
+
+.button__item-right {
+  right: 70px;
+}
+
+.button__item-right:hover,
+.button__item-left:hover {
+  background-color: rgba(0, 0, 0, 0.716);
+}
+
+.button-test {
+  padding: 0 200px 0 200px;
+}
+
+.button-test__button {
+  font-size: 1.5em;
+  padding: 25px;
+  background-color: #920404;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  margin: 20px;
+}
+
+.button-test__text {
+  font-size: 1.2em;
+  padding: 25px;
+  background-color: #690000;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  display: none;
+  margin: 20px;
+}
+
+.--button-active {
+  display: block;
+}
+
+/* gio test page----------------------------
+.gio {
+}
+.gio p {
+  text-align: center;
+}
+
+.gio h2 {
+  text-align: center;
+}
+.gio__container {
+  display: flex;
+  justify-content: center;
+}
+
+.gio__widgets {
+  background-color: rgb(80, 80, 80);
+  padding: 60px;
+  width: 200px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgb(164, 200, 231);
+} */
+
+/* animations */
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  .gio__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .layout-test {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .overview {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overview__image {
+    width: 100%;
+  }
+
+  .skills-grid__container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .banner__text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    min-width: 550px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .header__menu-toggle {
+    display: block;
+    border: none;
+    background-color: #fff;
+    font-size: 40px;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+
+  .header__menu-toggle:hover {
+    color: #ad2600;
+  }
+
+  .header__menu-close {
+    display: none;
+    border: none;
+    background-color: #fff;
+    font-size: 40px;
+    margin-right: 50px;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+
+  .header__logo {
+    margin-left: 50px;
+  }
+
+  .header__navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: -100%;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* height: 100vh; */
+    padding: 0;
+    transition: 0.5s;
+  }
+
+  .navigation__item {
+    margin: 10px;
+  }
+
+  .navigation__item a {
+    text-decoration: none;
+    color: #0f4275;
+    font-size: 20px;
+    margin-left: 30px;
+    transition: 0.2s;
+    padding: 10px;
+  }
+
+  .navigation__item a.item--active {
+    color: #930000;
+    cursor: pointer;
+  }
+
+  .navigation__item a:hover {
+    color: #d20000;
+  }
+}
